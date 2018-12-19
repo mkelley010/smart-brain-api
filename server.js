@@ -89,12 +89,3 @@ app.put('/image', (req, res) => {
 app.listen(3000, () => {
     console.log("app is running on port 3000");
 });
-
-/*
-/ --> res == this is working
-/signin --> POST (because we're verifying user authentication), res == success/fail
-/register --> POST (because we're adding users), res == new user
-/profile/:userId --> GET (just wanna get the user info), res == user
-/image --> PUT, res == updated user (their rank?)
-
- */
